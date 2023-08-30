@@ -71,3 +71,39 @@ def fizz_buzz(num):
         print(f"{i} = {result}")
         
 fizz_buzz(16)
+
+# 3. Calculator
+
+# JS - 
+# function calculator(num1, num2, operation){
+#     if (operations = "+"){
+#         return num1 + num2
+#     }
+#     if (operations = "-"){
+#         return num1 - num2
+#     }
+#     if (operations = "*"){
+#         return num1 * num2
+#     }
+#     if (operations = "/"){
+#         return num2 !== 0 ? num1/num2 : "Can't Divide by 0"
+#     }
+# }
+
+# calculator(2,2,"+") //4
+
+
+# Python:
+
+def calculator(num1, num2, operation):
+    if operation == "+":
+        return num1 + num2
+    if operation == "-":
+        return num1 - num2
+    if operation == "*":
+        return num1 * num2
+    if operation == "/":
+        return num1 / num2 if num2 != 0 else "Can't Divide by 0"
+
+result = calculator(2, 2, "+")
+print(result)  # Output: 4
