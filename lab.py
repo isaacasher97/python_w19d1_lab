@@ -103,7 +103,8 @@ def calculator(num1, num2, operation):
     if operation == "*":
         return num1 * num2
     if operation == "/":
-        return num1 / num2 if num2 != 0 else "Can't Divide by 0"
+        return num1 / num2 if num2 != 0 else "Can't Divide by 0" 
+        # "if" acts as ? would in a js turnary statement. "else" also replaces ":" in turnary statements
 
 result = calculator(2, 2, "+")
 print(result)  # Output: 4
